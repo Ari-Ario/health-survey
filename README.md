@@ -1,3 +1,12 @@
+# HEALTH-SURVEY:
+
+## Design(FIgmal):
+
+## Functionality:
+### JavaScript:
+### PHP: 
+
+
 ## How to run this project
 
 Run the command `docker compose up` inside the project root.
