@@ -1,6 +1,9 @@
 # HEALTH-SURVEY:
 
-## Design(FIgmal):
+## Design(Figmal):
+https://www.figma.com/file/1wD3Wd46AHPp0HuP8aOXcb/Untitled?type=design&node-id=5-3&mode=design&t=v7IzAGwUJRqzqJ5X-0
+
+https://www.figma.com/file/1wD3Wd46AHPp0HuP8aOXcb/Untitled?type=design&node-id=2-2&mode=design&t=v7IzAGwUJRqzqJ5X-0
 
 ## Functionality:
 ### JavaScript:
