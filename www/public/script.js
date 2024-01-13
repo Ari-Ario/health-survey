@@ -1,18 +1,11 @@
-let counter = 0;
-function openPopUp(){
-    counter ++;
-    let popup = document.getElementById("form1");
-    popup.style.display= "block";
-}
 
-function closePopUp(){
+
+function closeForm(){
     let popup = document.getElementById("popup");
     popup.style.display= "none";
 }
 
-function switchForm(formId) {
-    // Hide the current form
-    document.getElementById(document.activeElement.form.id).style.display = 'none';
-    // Display the target form
-    document.getElementById(formId).style.display = 'block';
+// Function to open the popup
+function openForm() {
+    // Load content into the popup
 }

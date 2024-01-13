@@ -1,0 +1,1 @@
+<p>Your info is submited</p>

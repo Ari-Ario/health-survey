@@ -12,10 +12,10 @@
 
 <body>
   <main>
-    <button onclick="openPopUp()">Survey</button>
-    <?php include_once "./popups/popupFirst.php" ?>
-    <?php include_once "./popups/popupSecond.php" ?>
-  </main>
+    <form action="./form-one.php" method="POST">
+      <input type="submit" value="Survey">
+      <input type="text" name="" id="">
+    </form>  
 
   <script src="script.js"></script>
 </body>
