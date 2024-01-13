@@ -20,19 +20,59 @@ if (session_status() === PHP_SESSION_NONE){
 <section id="form1" class="form" >
   <section class="form-content" role="document">
       
-    <section class="">
-        <section class=""><span class="close" onclick="closeForm()">&times;</span></section>
+    <section class="close-form">
+        <section class="close"><span >&times;</span></section>
     </section>
 
     <section class="form-section-one">
       <form action="/components/form-one-to-two.php" method="POST">
-        <label for="input1">Field 1:</label>
-        <input type="text" id="input1" name="input1">
-        <input name="inp1" type="text" placeholder="first input">
-        <input type="text" placeholder="second input">
-        <input type="text" placeholder="third input">
-        <input type="text" placeholder="fourth input">
-        <input type="text" placeholder="fifth input">
+      
+      <fieldset>
+        <legend>How healthy are you physically?</legend>
+        <section class="field">
+          <input type="range" name="size" id="size_1" value="small" >
+          <label for="size_1">Small</label>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you take nutritional supplements?</legend>
+        <section class="field">
+          <input type="radio" name="size" id="size_2" value="medium" />
+          <label for="size_2">Medium</label>
+        </section>
+        <section class="field">
+          <input type="radio" name="size" id="size_3" value="large" />
+          <label for="size_3">Large</label>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>How important is physical activity to you?</legend>
+        <section class="field">
+          <input type="range" name="size" id="size_1" value="small" />
+          <label for="size_1">Small</label>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>What additional physical activity do you do most?</legend>
+        <section class="field">
+          <input type="checkbox" name="size" id="size_2" value="medium" />
+          <label for="size_2">Medium</label>
+          <input type="radio" name="size" id="size_3" value="large" />
+          <label for="size_3">Large</label>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you feel you do too little, just enough or way too much additional physical activity?</legend>
+        <section class="field">
+          <input type="range" name="size" id="size_1" value="small" >
+          <label for="size_1">Small</label>
+        </section>
+      </fieldset>
+
         <input type="submit" value="Next" >
       </form>
     </section>

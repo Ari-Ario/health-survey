@@ -15,6 +15,7 @@
     <form action="./form-one.php" method="POST">
       <input type="submit" value="Survey">
       <input type="text" name="" id="">
+      <button>just butt</button>
     </form>  
 
   <script src="script.js"></script>
