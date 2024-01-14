@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section id="form2" class="form">
+<section id="form2" class="container">
   <section class="form-content" role="document">
       
     <section class="close-form">

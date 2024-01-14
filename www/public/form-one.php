@@ -17,7 +17,7 @@ if (session_status() === PHP_SESSION_NONE){
 </head>
 
 <body>
-<section id="form1" class="form" >
+<section id="form1" class="container" >
   <section class="form-content" role="document">
       
     <section class="close-form">
