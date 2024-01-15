@@ -1,5 +1,8 @@
 /* Basic form styling */
-
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
 :root {
     /* cold: */
     --darklight: #83e5af;
@@ -8,11 +11,11 @@
 	--darkest: #022619;
 	--grey: #6b806f;
     /* mixed */
-    --blau: #100089;
-    --lightblau: #218dcb;
+    --blue: #100089;
+    --lightblue: #218dcb;
     --yellow: #e7b416;
     --yellow-red: #db7b2b;
-    --red: #cc3232;
+    --red: #b94924;
     /* speciel */
 	--pink: #EC4899;
 	--purple: #8B5CF6;
@@ -23,28 +26,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
     background-color: var(--darklight);
     margin: 0;
     border: 0;
 }
 .form-content {
-    /* display: block;
-    text-align: center;
-    position: fixed;
-    top: 20%;
-    left: 20%; */
     width: 768px;
-    padding: 0;
-    margin: 0;
+    min-width: 666px;
     background-color: var(--dark);
     border-radius: 10px;
 }
 
 form {
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0 10px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
 }
@@ -72,11 +67,16 @@ input {
     text-align: center;
     height: 20px;
     width: 20px;
-    padding-right: 5px;
-    color: white;
-    border: 1px solid rgb(179, 3, 3);
+    padding: 0 3px 8px 3px;
+    color: var(--light);
+    border: 1px solid var(--red);
     border-radius: 5px;
-    background-color: rgb(191, 77, 77);
+    background-color: var(--red);
+    margin: 0;
+    padding: 0;
+}
+#cross{
+    font-size: 25px;
 }
 
 .field {
@@ -97,16 +97,17 @@ input {
 }
 
 #fieldset4 {
-    display: grid;
+    display: block;
+    max-width: fit-content;
+/*     display: grid;
     grid-template-columns: repeat(1 / 1fr);
     column-gap: 0;
     margin: 0;
-    padding: 0;
+    padding: 0; */
 }
 .q4-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
     margin: 0;
     padding: 0;
     /* border: 1px solid white; */
@@ -122,7 +123,7 @@ legend {
     color: white;
 }
 
-button {
+button,  input:hover {
     background-color: #4caf50;
     color: white;
     padding: 10px 15px;
@@ -131,20 +132,29 @@ button {
     cursor: pointer;
 }
 
-fieldset:hover, input:hover {
-    background-color: #013813;
+/* [class*="btn"] or */ 
+.btn {
+    padding: 0 20px 0 20px;
+}
+
+fieldset:hover{
+    background-color:var(--darker);
 }
 
 
 @media screen and (max-width: 768px)  {
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .form-content {
-        max-width: 100%;
+        width: 100%;
         height: 100%;
-        background-color: rgb(39, 73, 35);
-        border-radius: 10px;
+        min-width: 300px;
+        border-radius: 0px;
     }
     #fieldset4 {
-        max-width: 100%;
+        width: 100%;
         column-gap: 0;
         margin: 0;
         padding: 0;

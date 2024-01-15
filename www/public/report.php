@@ -10,19 +10,24 @@
 <section id="form2" class="container">
   <section class="form-content" role="document">
       
-    <section class="close-form">
-        <section class="close"><span >&times;</span></section>
-    </section>
+    <?php include_once "./components-form/close.php"; ?>
 
-    <section class="form-section-three">
+    <section class="form-section-one">
       <form action="/index.php" method="post">
         <fieldset>
             <legend>Status</legend>
             <p>Your Data has been submited successfully!</p>
         </fieldset>
+
+        <section class="fieldset">
+          <section class="field">
+            <input class="btn" class="btn" type="button" value="Survey" >
+
+            <input class="btn" class="btn" type="submit" value="Home" >
+          </section>
+        <section>
       </form>
     </section>
-
   </section>
 </section>
 </body>

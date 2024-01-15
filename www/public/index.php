@@ -18,7 +18,7 @@
       <button>just butt</button>
     </form>  
 
-  <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 
 </html>

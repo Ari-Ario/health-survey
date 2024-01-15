@@ -11,9 +11,19 @@
 <section id="form2" class="container">
   <section class="form-content" role="document">
       
-    <section class="close-form">
-        <section class="close"><span >&times;</span></section>
-    </section>
+  <?php include_once "./components-form/close.php"; ?>
+
+    <fieldset class="fieldset">
+        <legend>Do you feel you do too little, just enough or way too much additional physical activity?</legend>
+        <section class="field">
+          <input type="range" name="size" id="size_1" min="1" max="3" >
+        </section>
+        <section class="field">
+          <label for="q1">Far too little</label>
+          <label for="q1">Just right</label>
+          <label for="q1">Far too much</label>
+        </section>
+      </fieldset>
 
     <section class="form-section-two">
       <form action="/components-form/submit-form-two.php" method="post">
@@ -52,7 +62,14 @@
           </section>
         </fieldset>
 
-        <input type="submit" value="SUBMIT DATA">
+        <section class="fieldset">
+        <section class="field">
+          <input class="btn" type="button" value="Back" >
+
+          <input class="btn" type="submit" value="Next" >
+        </section>
+      <section>
+
       </form>
     </section>
 

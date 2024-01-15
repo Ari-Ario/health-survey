@@ -1,8 +1,10 @@
 
 
 function closeForm(){
-    let popup = document.getElementById("popup");
-    popup.style.display= "none";
+    console.log("inside")
+    let closeForm = document.getElementById("close");
+    
+    // if (closeForm){ section.scrollIntoView({ behavior: 'smooth' });}
 }
 
 // Function to open the popup
