@@ -25,7 +25,7 @@ if (session_status() === PHP_SESSION_NONE){
     </section>
 
     <section class="form-section-one">
-      <form action="/components/form-one-to-two.php" method="POST">
+      <form action="/components-form/form-one-to-two.php" method="POST">
       
       <fieldset class="fieldset">
         <legend>1- How healthy are you physically?</legend>

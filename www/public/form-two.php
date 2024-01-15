@@ -16,7 +16,7 @@
     </section>
 
     <section class="form-section-two">
-      <form action="/components/submit-form-two.php" method="post">
+      <form action="/components-form/submit-form-two.php" method="post">
         <fieldset>
           <legend>On a typical day, how many of your meals or snacks contain carbohydrates?</legend>
           <section class="field">

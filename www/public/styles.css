@@ -1,5 +1,24 @@
 /* Basic form styling */
 
+:root {
+    /* cold: */
+    --darklight: #83e5af;
+	--dark: #1b3b26;
+	--darker: #133627;
+	--darkest: #001E3C;
+	--grey: #6b806f;
+    /* warm */
+    --blau: #100089;
+    --lightblau: #218dcb;
+    --yellow: #e7b416;
+    --yellow-red: #db7b2b;
+    --red: #cc3232;
+    /* mixd or speciel */
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #eeeeee;
+}
+
 .container {
   display: flex;
   justify-content: center;
