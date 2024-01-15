@@ -5,7 +5,7 @@ if (session_start() === PHP_SESSION_NONE){
 }
 
 if ($_SERVER['REQUEST_METHOD'] === "POST"){
-    header("location: /submission-info.php");
+    header("location: /report.php");
 } else {
     header("location: /index.php");
 }
