@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <?php
+include_once "./components-home/header.php";
+  ?>
   <main>
     <form action="./form-one.php" method="POST">
       <input type="submit" value="Survey">
