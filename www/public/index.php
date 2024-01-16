@@ -25,6 +25,4 @@ include_once "./components-home/header.php";
   ?>
 </body>
 
-
- 
 </html>
