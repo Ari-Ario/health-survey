@@ -65,9 +65,9 @@ input {
 
 .close {
     text-align: center;
-    height: 20px;
-    width: 20px;
-    padding: 0 10px 15px 10px;
+    /* height: 20px;
+    width: 20px; 
+    padding: 0 10px 20px 10px; */
     color: var(--light);
     border: 1px solid var(--red);
     border-radius: 5px;
@@ -77,6 +77,7 @@ input {
 }
 #cross{
     font-size: 25px;
+    padding: 0 8px 20px 8px;
 }
 
 .field {
