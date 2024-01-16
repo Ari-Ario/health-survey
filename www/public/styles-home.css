@@ -259,6 +259,7 @@ footer {
   #main-container{
     width: 100%;
     min-width: 375px;
+    font-size: 14px;
   }
   .header-homepage{
     width: 100%;

@@ -28,11 +28,13 @@ if (session_status() === PHP_SESSION_NONE){
       <fieldset class="fieldset">
         <legend>1- How healthy are you physically?</legend>
         <section class="field">
-          <input type="range" name="q1" id="q1" value="" min="1" max="3" >
+          <input type="range" name="q1" id="q1" value="" min="0" max="4" >
         </section>
         <section class="field">
           <label for="q1">Not at all</label>
+          <label for="q1">Little</label>
           <label for="q1">Medium</label>
+          <label for="q1">Healthy</label>
           <label for="q1">Very healthy</label>
         </section>
       </fieldset>
@@ -41,10 +43,13 @@ if (session_status() === PHP_SESSION_NONE){
         <legend>2- Do you take nutritional supplements?</legend>
         <section class="field">
           <label for="q2" class="q2">
-            Yes <input type="radio" name="q2" id="q2" value="Yes" />
+            <input type="radio" name="q2" id="q2" value="yes" />Yes
           </label>
           <label for="q2" class="q2">
-            No <input type="radio" name="q2" id="q2" value="No" />
+            <input type="radio" name="q2" id="q2" value="no" />No 
+          </label>
+          <label for="q2" class="q2">
+            <input type="radio" name="q2" id="q2" value="sometimes" />Sometimes 
           </label>
         </section>
       </fieldset>
@@ -52,11 +57,13 @@ if (session_status() === PHP_SESSION_NONE){
       <fieldset class="fieldset">
         <legend>3- How important is physical activity to you?</legend>
         <section class="field">
-          <input type="range" name="q3" id="q3" min="1" max="3"/>
+          <input type="range" name="q3" id="q3" min="0" max="4"/>
         </section>
         <section class="field">
           <label for="q3">Not at all</label>
+          <label for="q3">Little</label>
           <label for="q3">Medium</label>
+          <label for="q3">Important</label>
           <label for="q3">Very important</label>
         </section>
       </fieldset>
@@ -78,34 +85,34 @@ if (session_status() === PHP_SESSION_NONE){
 
           <section class="q4-grid">
             <label for="q4" class="q4">
-              Jogging <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Jogging <input type="checkbox" name="q4" id="q4" value="jogging" />
             </label>
             <label for="q4" class="q4">
-              Running <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Running <input type="checkbox" name="q4" id="q4" value="running" />
             </label>
             <label for="q4" class="q4">
-              Swimming <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Swimming <input type="checkbox" name="q4" id="q4" value="swimming" />
             </label>
           </section>
           <!-- <section class="q4-grid"></section> -->
           <section class="q4-grid">
             <label for="q4" class="q4">
-              Dancing <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Dancing <input type="checkbox" name="q4" id="q4" value="dancing" />
             </label>
             <label for="q4" class="q4">
-              Aerobics <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Aerobics <input type="checkbox" name="q4" id="q4" value="aerobic" />
             </label>
             <label for="q4" class="q4">
-              Pilates <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Pilates <input type="checkbox" name="q4" id="q4" value="pilates" />
             </label>
           </section>
 
           <section class="q4-grid">
             <label for="q4" class="q4">
-              Team sports <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Team sports <input type="checkbox" name="q4" id="q4" value="team sports" />
             </label>
             <label for="q4" class="q4">
-              Other <input type="checkbox" name="q4" id="q4" value="Yes" />
+              Other <input type="checkbox" name="q4" id="q4" value="other" />
             </label>
           <section>
 
@@ -114,7 +121,7 @@ if (session_status() === PHP_SESSION_NONE){
 
       <section class="fieldset">
         <section class="field">
-        <input class="btn" type="button" value="Back" >
+        <input class="btn" type="button" value="Back" onclick="closeForm()">
 
         <input class="btn" type="submit" value="Next" >
         </section>

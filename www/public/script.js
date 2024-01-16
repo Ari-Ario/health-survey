@@ -1,8 +1,14 @@
 
 function closeForm(){
-    console.log("sth else")
     let closeForm = document.getElementById("close")
         location.href = "/index.php";
+    
+    // if (closeForm){ section.scrollIntoView({ behavior: 'smooth' });}
+}
+
+function backToFirstForm(){
+    let closeForm = document.getElementById("close")
+        location.href = "/form-one.php";
     
     // if (closeForm){ section.scrollIntoView({ behavior: 'smooth' });}
 }

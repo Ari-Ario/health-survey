@@ -11,19 +11,18 @@
   <link rel="stylesheet" href="styles-home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<section id="main-container">
+<body id="main-container">
   <header>
     <?php
   include_once "./components-home/header.php";
     ?>
   </header>
-
-  <body>
-
+    <main>
       <?php
       include_once "./components-home/body.php";
       ?>
-  </body>
-</section>
+    </main>
+
+</body>
 
 </html>
