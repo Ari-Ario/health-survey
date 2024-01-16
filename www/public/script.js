@@ -1,8 +1,8 @@
 
-
 function closeForm(){
-    console.log("inside")
-    let closeForm = document.getElementById("close");
+    console.log("sth else")
+    let closeForm = document.getElementById("close")
+        location.href = "/index.php";
     
     // if (closeForm){ section.scrollIntoView({ behavior: 'smooth' });}
 }
