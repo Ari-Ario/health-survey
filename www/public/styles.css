@@ -83,6 +83,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: space-between;
+    margin-bottom: 20px;
 }
 
 .fieldset{
