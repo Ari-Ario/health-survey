@@ -7,7 +7,9 @@ function closeForm(){
     // if (closeForm){ section.scrollIntoView({ behavior: 'smooth' });}
 }
 
-// Function to open the popup
+// Function to open the Form
 function openForm() {
+    console.log("opened")
     // Load content into the popup
+    location.href = "form-one.php";
 }

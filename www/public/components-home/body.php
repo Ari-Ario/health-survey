@@ -1,4 +1,5 @@
 
+<section id="main-container">
 <section class="video-content">
     <video autoplay muted loop id="myVideo">
       <source src="./Videos/homevideo.mp4" type="video/mp4">
@@ -9,9 +10,7 @@
 <section class="content">
       <h1>Field The Difference</h1>
       <h2>Market Leader in Global Data Collection for Healthcare Market Research</h2>
-      <form  action="./form-one.php" method="POST">
-        <input id="myBtn" type="submit" value="Start Survey">
-      </form>
+      <button id="myBtn"><a href="/form-one.php">Start Survey</a></button>
     
         <section class="container-cards" >
           <section class="cards">

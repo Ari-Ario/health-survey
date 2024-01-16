@@ -15,6 +15,6 @@
     <section class="header-navigation">
         <a class="navigation">Home</a>
         <a class="navigation">Contact</a>
-        <a href="/form-one.php" class="navigation">Start Survey</a>
+        <a href="/form-one.php" class="navigation">Survey</a>
     </section>
 </section>
