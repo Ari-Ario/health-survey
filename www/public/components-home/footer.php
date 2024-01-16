@@ -1,8 +1,7 @@
 <footer>
         <section class="contact">
 
-            <p>
-                Email: info@example.com<br>
+            <p>Email: info@med.com<br>
                 Telefon: +49 123 456789</p>
         </section>
         <section class="media-icons">

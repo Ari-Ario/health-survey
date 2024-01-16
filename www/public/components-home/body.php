@@ -16,17 +16,17 @@
         <section class="container-cards" >
           <section class="cards">
             <h3 class="card-heading">QUANTITATIVE RESEARCH</h3>
-            <h4 class="card-text">Sophisticated techniques designed to engage respondents throughout the duration of the survey, leading to more reliable data.</h4>
+            <p class="card-text">Sophisticated techniques designed to engage respondents throughout the duration of the survey, leading to more reliable data.</p>
           </section>
         <section class="cards">
             <h3 class="card-heading">TRUSTED SERVICE</h3>
-            <h4 class="card-text">Team of industry experts provide
+            <p class="card-text">Team of industry experts provide
     24/7 client coverage delivering 
-    reliable results on time</h4>
+    reliable results on time</p>
         </section>
         <section class="cards">
             <h3 class="card-heading">USER-CENTRIC DESIGN</h3>
-            <h4 class="card-text">Dedicated to crafting an optimal online health survey experience by prioritizing user needs, fostering accessibility, and employing intuitive interfaces.</h4>
+            <p class="card-text">Dedicated to crafting an optimal online health survey experience by prioritizing user needs, fostering accessibility, and employing intuitive interfaces.</p>
         </section>
     </section>
     <footer>
