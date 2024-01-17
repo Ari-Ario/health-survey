@@ -85,34 +85,34 @@ if (session_status() === PHP_SESSION_NONE){
 
           <section class="q4-grid">
             <label for="q4" class="q4">
-              Jogging <input type="checkbox" name="q4" id="q4" value="jogging" />
+              Jogging <input type="checkbox" name="q4" id="q4" value="" />
             </label>
             <label for="q4" class="q4">
-              Running <input type="checkbox" name="q4" id="q4" value="running" />
+              Running <input type="checkbox" name="q4" id="q4" value="" />
             </label>
             <label for="q4" class="q4">
-              Swimming <input type="checkbox" name="q4" id="q4" value="swimming" />
+              Swimming <input type="checkbox" name="q4" id="q4" value="" />
             </label>
           </section>
           <!-- <section class="q4-grid"></section> -->
           <section class="q4-grid">
             <label for="q4" class="q4">
-              Dancing <input type="checkbox" name="q4" id="q4" value="dancing" />
+              Dancing <input type="checkbox" name="q4" id="q4" value="" />
             </label>
             <label for="q4" class="q4">
-              Aerobics <input type="checkbox" name="q4" id="q4" value="aerobic" />
+              Aerobics <input type="checkbox" name="q4" id="q4" value="" />
             </label>
             <label for="q4" class="q4">
-              Pilates <input type="checkbox" name="q4" id="q4" value="pilates" />
+              Pilates <input type="checkbox" name="q4" id="q4" value="" />
             </label>
           </section>
 
           <section class="q4-grid">
             <label for="q4" class="q4">
-              Team sports <input type="checkbox" name="q4" id="q4" value="team sports" />
+              Team sports <input type="checkbox" name="q4" id="q4" value="" />
             </label>
             <label for="q4" class="q4">
-              Other <input type="checkbox" name="q4" id="q4" value="other" />
+              Other <input type="checkbox" name="q4" id="q4" value="" />
             </label>
           <section>
 

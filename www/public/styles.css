@@ -92,7 +92,7 @@ fieldset{
     /* display: flex; */
 }
 
-.q2, q5 {
+.q2 {
     display: flex;
     justify-content: space-around;
     padding-left: 8%;
