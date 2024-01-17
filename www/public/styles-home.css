@@ -111,9 +111,6 @@ main {
   margin: 0%;
   margin-inline-end: 0%;
 }
-.container-cards{
-  display: flex;
-}
 
 #myBtn {
   height: 5%;
@@ -126,8 +123,10 @@ main {
   border-radius: 10px; /* half of the button's width */
   font-weight: bold;
 }
+
 a {
   text-decoration: none;
+  color: white;
 }
 
 #myBtn:hover {
@@ -136,6 +135,10 @@ a {
 }
 
 /* cards css */
+
+.container-cards{
+  display: flex;
+}
 .cards {
   width: 461px;
   height: 267px;
@@ -172,34 +175,6 @@ h2 {
   font-weight: 400;
   line-height: normal;
 }
-/* 
-.card-heading {
-  width: 438px;
-  height: 40px;
-  flex-shrink: 0;
-  color: #fff;
-
-  font-family: Inter;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin: 10px;
-}
-.card-text {
-  width: 453px;
-  height: 129px;
-  flex-shrink: 0;
-  color: #ffefef;
-
-  font-family: Inter;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 10px;
-  margin-top: 50px;
-} */
 
 /* footer */
 footer {
