@@ -132,6 +132,9 @@ fieldset:hover{
 
 
 @media screen and (max-width: 768px)  {
+    legend{
+        font-size: 16px;
+      }
     body{
         margin: 0;
         padding: 0;
@@ -141,12 +144,28 @@ fieldset:hover{
         height: 100%;
         min-width: 300px;
         border-radius: 0px;
+        margin: 0;
+        padding: 0;
+    }
+    #form1{
+        height: 100%;
+    }
+    #form2{
+        max-height: 100%;
+    }
+    .fieldset {
+        margin: 0;
+        padding: 0;
     }
     #fieldset4 {
         width: 100%;
         column-gap: 0;
         margin: 0;
         padding: 0;
+    }
+    #field5, #q5, #q6, #q7, #q8, #q9, #q10 {
+        margin: 0;
+        padding: 5px;
     }
     label {
         font-size: 12px;

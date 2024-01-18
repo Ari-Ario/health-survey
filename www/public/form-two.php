@@ -24,11 +24,11 @@
       <form name="form2" id="formsecond" action="/components-form/submit-form-two.php" method="POST">
 
         <fieldset class="fieldset">
-          <legend>Do you feel you do too little, just enough or way too much additional physical activity?</legend>
+          <legend>5- how do you evaluate your additional physical activity?</legend>
           <section class="field">
             <input type="range" name="q5" id="q5" min="0" max="100"  value="0">
           </section>
-          <section class="field">
+          <section class="field" id="field5">
             <label for="q5">A little</label>
             <label for="q5">Just right</label>
             <label for="q5">Too much</label>
@@ -36,37 +36,37 @@
         </fieldset>
 
         <fieldset>
-          <legend>On a typical day, how many of your meals or snacks contain carbohydrates?</legend>
+          <legend>6- how many of your meals or snacks contain carbohydrates daily?</legend>
           <section class="field">
             <input type="number" name="q6" id="q6" placeholder="e.g: 2" >
           </section>
         </fieldset>
 
         <fieldset>
-          <legend>On a typical day, how many of your meals or snacks contain protein?</legend>
+          <legend>7- how many of your meals or snacks contain protein daily?</legend>
           <section class="field">
             <input type="number" name="q7" id="q7" placeholder="e.g: 2" />
           </section>
         </fieldset>
 
         <fieldset>
-          <legend>On a typical day, how many of your meals or snacks contain vegetables?</legend>
+          <legend>8- how many of your meals or snacks contain vegetables daily?</legend>
           <section class="field">
-            <input type="number" name="q8" id="size_1" placeholder="e.g: 2"/>
+            <input type="number" name="q8" id="q8" placeholder="e.g: 2"/>
           </section>
         </fieldset>
 
         <fieldset>
-          <legend>On a typical day, how many of your meals or snacks contain fruit?</legend>
+          <legend>9- how many of your meals or snacks contain fruit daily?</legend>
           <section class="field">
-            <input type="number" name="q9" id="size_2" placeholder="e.g: 2" />
+            <input type="number" name="q9" id="q9" placeholder="e.g: 2" />
           </section>
         </fieldset>
 
         <fieldset>
-          <legend>On a typical day, how many of your meals are microwaved or prepared?</legend>
+          <legend>10- how many of your meals are microwaved or prepared daily?</legend>
           <section class="field">
-            <input type="number" name="q10" id="size_1" placeholder="e.g: 2" >
+            <input type="number" name="q10" id="q10" placeholder="e.g: 2" >
           </section>
         </fieldset>
 

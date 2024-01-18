@@ -13,7 +13,7 @@ $questions = array(
   array(
       "id" => "q2",
       "type"          => "radio",
-      "healthy-value" => "Ja", // Gesunde Antwort
+      "healthy-value" => "Yes", // Gesunde Antwort
       "healthy-range" => array(1, 1), // Optional
       "healthy-points"=> 3
   ),
