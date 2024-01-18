@@ -140,8 +140,8 @@ if (session_status() === PHP_SESSION_NONE){
 </section>
 
 <!-- <footer>
-        <?php include_once "./public/components-home/footer.php"; ?>
-      </footer> -->
+  <?php include_once "./public/components-home/footer.php"; ?>
+</footer> -->
 
 </body>
 </html>

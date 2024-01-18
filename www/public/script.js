@@ -29,7 +29,6 @@ class healthSurvey{
 
     // Validation of Ranges
     validateFirstForm() {
-      console.log("--------------------------")
       event.preventDefault();
 
       let q1Input = document.getElementById("q1");
