@@ -14,16 +14,22 @@ if (session_status() === PHP_SESSION_NONE){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First form</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-home.css">
+
 </head>
 
 <body>
-<section id="form1" class="container" >
+<?php include_once "./components-home/header.php"; ?>
+
+<?php include_once "./components-home/video-bg.php"; ?>
+
+<section id="form1" class="container content" >
   <section class="form-content" role="document">
       
     <?php include_once "./components-form/close.php"; ?>
 
     <section class="form-section-one">
-      <form name="form1" action="/components-form/form-one-to-two.php" method="POST">
+      <form name="form1" id="formfirst" action="/components-form/form-one-to-two.php" method="POST">
       
       <fieldset class="fieldset">
         <legend>1- How healthy are you physically?</legend>
@@ -32,7 +38,7 @@ if (session_status() === PHP_SESSION_NONE){
         </section>
         <section class="field">
           <label for="q1">Not at all</label>
-          <label for="q1">Little</label>
+          <label for="q1">A little</label>
           <label for="q1">Medium</label>
           <label for="q1">Healthy</label>
           <label for="q1">Very healthy</label>
@@ -61,7 +67,7 @@ if (session_status() === PHP_SESSION_NONE){
         </section>
         <section class="field">
           <label for="q3">Not at all</label>
-          <label for="q3">Little</label>
+          <label for="q3">A little</label>
           <label for="q3">Medium</label>
           <label for="q3">Important</label>
           <label for="q3">Very important</label>
@@ -73,13 +79,13 @@ if (session_status() === PHP_SESSION_NONE){
         <section class="field" id="fieldset4">
           <section class="q4-grid">
             <label for="q4" class="q4">
-              No activity<input type="checkbox" name="q4" class="q4" value="1" /> 
+              No activity<input type="checkbox" name="q4" class="q4" value="No-activity" /> 
             </label>
             <label for="q4" class="q4">
-              Lifting weights <input type="checkbox" name="q4" class="q4" value="1" />
+              Lifting weights <input type="checkbox" name="q4" class="q4" value="Lifting-wights" />
             </label>
             <label for="q4" class="q4">
-              Walking <input type="checkbox" name="q4" class="q4" value="1" />
+              Walking <input type="checkbox" name="q4" class="q4" value="Walking" />
             </label>
           </section>
 
@@ -114,7 +120,7 @@ if (session_status() === PHP_SESSION_NONE){
             <label for="q4" class="q4">
               Other <input type="checkbox" name="q4" class="q4" value="1" />
             </label>
-            <input type="button" onclick="resetCheckboxs()" value="Reset">
+            <input class="btn" type="button" onclick="resetCheckboxs()" value="Reset">
           <section>
 
         </section>
@@ -124,15 +130,19 @@ if (session_status() === PHP_SESSION_NONE){
         <section class="field">
         <input class="btn" type="button" value="Back" onclick="closeForm()">
 
-        <input class="btn" type="submit" value="Next" onsubmit="validateForm()" >
+        <input class="btn" type="submit" value="Next" onclick="validateFirstForm()" >
         </section>
       <section>
 
       </form>
     </section>
-
   </section>
 </section>
+
+<!-- <footer>
+        <?php include_once "./public/components-home/footer.php"; ?>
+      </footer> -->
+
 </body>
 </html>
 

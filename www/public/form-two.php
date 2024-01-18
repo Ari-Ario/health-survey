@@ -6,15 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sencond form</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-home.css">
+
 </head>
+
 <body>
-<section id="form2" class="container">
+<?php include_once "./components-home/header.php"; ?>
+<?php include_once "./components-home/video-bg.php"; ?>
+
+
+<section id="form2" class="container content">
   <section class="form-content" role="document">
       
   <?php include_once "./components-form/close.php"; ?>
 
     <section class="form-section-two">
-      <form name="form2" action="/components-form/submit-form-two.php" method="POST">
+      <form name="form2" id="formsecond" action="/components-form/submit-form-two.php" method="POST">
 
         <fieldset class="fieldset">
           <legend>Do you feel you do too little, just enough or way too much additional physical activity?</legend>
@@ -67,7 +74,7 @@
         <section class="field">
           <input class="btn" type="button" value="Back" onclick="backToFirstForm()">
 
-          <input class="btn" type="submit" value="Next" >
+          <input class="btn" type="submit" value="Next" onclick="validateSecondForm()">
         </section>
       <section>
 
@@ -77,5 +84,10 @@
   </section>
 </section>
 <script src="script.js"></script>
+
+<!-- <footer>
+  <?php include_once "./components-home/footer.php"; ?>
+  </footer> -->
+
 </body>
 </html>

@@ -1,8 +1,8 @@
 /* colors */
 html{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
   color: #ffffff;
+  font-size: large;
 }
 
 body {
@@ -11,8 +11,8 @@ body {
 }
 :root {
   /* cold: */
-  --darklight: #83e5af;
-  --dark: #1b3b26;
+  --darklight: #5aa47b63;
+  --dark: #35503e;
   --darker: #0d2e1f;
   --darkest: #022619;
   --grey: #6b806f;
@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 40px;
   flex-shrink: 0;
-  background-color: #022619;
+  background-color: var(--darkest);
   color: white;
   margin: 0;
   padding: 0;
@@ -85,8 +85,6 @@ h2 {
 
 main {
   margin: 0;
-  font-family: Arial;
-  font-size: 17px;
 }
 #myVideo {
   right: 0;
@@ -114,24 +112,27 @@ main {
 
 #myBtn {
   height: 5%;
-  width: 30%;
+  width: fit-content;
   padding: 10px;
   border: none;
-  background: #03412a;
+  background: var(--dark);
   color: #fff;
   cursor: pointer;
-  border-radius: 10px; /* half of the button's width */
+  border-radius: 8px; /* half of the button's width */
+  font-size: large;
   font-weight: bold;
+}
+#myBtn:hover {
+  background-color: var(--darklight);
+  color: white;
+  border: 1px solid var(--darkest);
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+  font-size: medium;
 }
 
 /* cards css */
@@ -156,9 +157,7 @@ h1 {
   flex-shrink: 0;
   color: #fff;
   margin: 0%;
-  font-family: Inter;
   font-size: 90px;
-  font-style: normal;
   font-weight: 800;
   line-height: normal;
   align-items: center;
@@ -169,32 +168,45 @@ h2 {
   color: #fff;
 
   text-align: center;
-  font-family: Inter;
   font-size: 40px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+h3{
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+p{
+  font-size: x-large;
 }
 
 /* footer */
 footer {
   width: 100%;
+  height: max-content;
   bottom: 0;
   display: flex;
   justify-content: space-between;
   color: #fbfbfb;
-  background-color: #02261997;
+  background-color: var(--dark);
+  opacity: 75%;
   position: fixed;
   z-index: 1;
 }
+[id="footer-par"]{
+  font-size: small;
+}
 
 .fa {
-  padding: 20px;
+  padding: 14px;
   font-size: 500px;
-  width: 60px;
+  width: 50px;
+  height: max-content;
   text-align: center;
   text-decoration: none;
-  margin: 10px 2px;
+  margin: 2px 2px;
 }
 
 .fa:hover {
@@ -202,21 +214,19 @@ footer {
 }
 
 .fa-facebook {
-  background: #02261999;
+  background: var(--darkest);
   color: white;
 }
 .fa-instagram {
-  background: #02261999;
+  background: var(--darkest);
   color: white;
 }
 .fa-youtube {
-  background: #02261999;
+  background: var(--darkest);
   color: white;
 }
 .contact {
   padding-left: 10px;
-  margin-top: 8px;
-  font-size: 18px;
   font-weight: bold;
 }
 .media-icons {

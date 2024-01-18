@@ -13,7 +13,7 @@
      
     <!-- navigator section -->
     <section class="header-navigation">
-        <a class="navigation">Home</a>
+        <a href="/index.php" class="navigation">Home</a>
         <a class="navigation">Contact</a>
         <a href="/form-one.php" class="navigation">Survey</a>
     </section>

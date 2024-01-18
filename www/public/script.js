@@ -27,20 +27,88 @@ class healthSurvey{
         });
     }
 
-    validate(){
-        
-        const answer1= document.getElementsByName('q1').value;
-        const answer2= document.getElementsByTagName('input[name="hobbies"]:checked');
-        const answer3= document.getElementsByTagName("q3");
-        const answer4= document.getElementsByTagName("q4");
-        breakme: 
-            if (answer1 < 1){
-                return breakme;
-            }
-            return breakme;
-        console.log(answer1)
-        alert("to next")
+    // Validation of Ranges
+    validateFirstForm() {
+      console.log("--------------------------")
+      event.preventDefault();
+
+      let q1Input = document.getElementById("q1");
+      let q2Input = document.getElementById("q2");
+
+      let q2Options = document.getElementsByName("q2");
+      let q4Options = document.getElementsByName("q4");
+      let q2Selected = false;
+      let q4Selected = false;
+
+      const minAllowedValue = 1;
+
+      if (q1Input.value < minAllowedValue) {
+        alert("Not at all cannot br accept as an answer");
+      }
+
+      if (q2Input.value < minAllowedValue) {
+        alert("Not at all cannot br accept as an answer");
+      }
+
+      // question 2
+      for (let i = 0; i < q2Options.length; i++) {
+        if (q2Options[i].checked) {
+          q2Selected = true;
+          break;
+        }
+      }
+
+      if (!q2Selected) {
+        alert("Error: Please select an option for question 2.");
+        return false;
+      }
+
+      // question 4
+
+      for (let i = 1; i < q4Options.length; i++) {
+        if (q4Options[i].checked) {
+          q4Selected = true;
+          break;
+        }
+      }
+
+      if (!q4Selected) {
+        alert("Error: Please select an option for question 4.");
+        return false;
+      } else {
+        document.getElementById("formfirst").submit();
+      }
     }
+
+    validateSecondForm() {
+      event.preventDefault();
+
+      let q6Input = document.getElementsByName("q6")[0].value;
+      let q7Input = document.getElementsByName("q7")[0].value;
+      let q8Input = document.getElementsByName("q8")[0].value;
+      let q9Input = document.getElementsByName("q9")[0].value;
+      let q10Input = document.getElementsByName("q10")[0].value;
+
+      if (
+        q6Input === "" ||
+        q7Input === "" ||
+        q8Input === "" ||
+        q9Input === "" ||
+        q10Input === ""
+      ) {
+        alert("Error: Please fill in all the required fields");
+      }
+
+      let q5Input = document.getElementById("q5");
+      const minAllowedValue = 1;
+
+      if (q5Input.value < minAllowedValue) {
+        alert("A littel cannot be accept as an answer");
+      } else {
+          document.getElementById('formsecond').submit()
+      }
+    }
+
 
 }
 
@@ -63,14 +131,11 @@ function resetCheckboxs() {
     survey.resetBoxes()
 }
 
-function validateForm(){
-    const answer1= document.getElementsByName('q1').value;
-    const answer2= document.getElementsByTagName('input[name="hobbies"]:checked');
-    const answer3= document.getElementsByTagName("q3");
-    const answer4= document.getElementsByTagName("q4");
-    if (answer1 === 0){
-        isValid = false;
-        console.log(answer1)
-        return;
-    }
+function validateFirstForm() {
+  survey.validateFirstForm() 
 }
+
+function validateSecondForm(){
+  survey.validateSecondForm()
+}
+

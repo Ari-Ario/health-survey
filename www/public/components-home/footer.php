@@ -1,7 +1,7 @@
 <footer>
     <section class="contact">
 
-        <p>Email: info@med.com<br>
+        <p id="footer-par">Email: info@med.com<br>
             Telefon: +49 123 456789</p>
     </section>
     <section class="media-icons">

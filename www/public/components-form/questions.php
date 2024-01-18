@@ -3,64 +3,64 @@
 $questions = array(
   array(
       // Schlüssel, Identifikator der Frage
-      "id" => "question-0",
+      "id" => "q1",
       // Fragetyp
       "type"          => "range",
       // Intervall für gesunde Antwort
-      "healthy-range" => array(7, 10),
+      "healthy-range" => array(70, 100),
       "healthy-points"=> 3
   ),
   array(
-      "id" => "question-1",
+      "id" => "q2",
       "type"          => "radio",
       "healthy-value" => "Ja", // Gesunde Antwort
       "healthy-range" => array(1, 1), // Optional
       "healthy-points"=> 3
   ),
   array(
-    "id" => "question-2",
+    "id" => "q3",
     "type"          => "range",
-    "healthy-range" => array(4, 5),
+    "healthy-range" => array(40, 50),
     "healthy-points"=> 3
   ),
   array(
-    "id" => "question-3",
+    "id" => "q4",
     "type"          => "checkbox",
     "healthy-range" => array(1, 5),
     "healthy-points"=> 6
   ),
   array(
-    "id" => "question-4",
+    "id" => "q5",
     "type"          => "range",
-    "healthy-range" => array(2, 4),
+    "healthy-range" => array(20, 40),
     "healthy-points"=> 3
   ),
   array(
-    "id" => "question-5",
+    "id" => "q6",
     "type"          => "number",
     "healthy-range" => array(2, 3),
     "healthy-points"=> 3
   ),
   array(
-    "id" => "question-6",
+    "id" => "q7",
     "type"          => "number",
     "healthy-range" => array(2, 3),
     "healthy-points"=> 3
   ),
   array(
-    "id" => "question-7",
+    "id" => "q8",
     "type"          => "number",
     "healthy-range" => array(1, 3),
     "healthy-points"=> 3
   ),
   array(
-    "id" => "question-8",
+    "id" => "q9",
     "type"          => "number",
     "healthy-range" => array(1, 3),
     "healthy-points"=> 3
   ),
   array(
-    "id" => "question-9",
+    "id" => "q10",
     "type"          => "number",
     "healthy-range" => array(0, 1),
     "healthy-points"=> 3
