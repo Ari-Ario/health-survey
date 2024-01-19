@@ -41,8 +41,9 @@ foreach (QUESTIONS as $i => $data) {
     $points = pointsInRange($data, $value);
 
     $totalPoints = $totalPoints + $points;
+    $questionNumber = substr($questionKey, 1);
 
-    $report .= "<p>$questionKey: points = $points (\$value=$value)</p>";
+    $report .= "<p>Question $questionNumber : points = $points with your input(\$value=$value)</p>";
 }
 
 function countSelectedCheckboxes($userPost) {
@@ -100,8 +101,9 @@ function pointsInRange($data, $value) {
                 else { 
                   $rep = "You have ".$totalPoints . " points. You are doing too much, you must reduce some Activity.";
                 }
-                echo "<p> $report </p>";
+                // print_r($_SESSION);
                 echo "<p> <b> $rep </b></p>";
+                echo "<p> $report </p>";
                 ?>
         </fieldset>
 

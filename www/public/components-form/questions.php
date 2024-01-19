@@ -2,18 +2,17 @@
 <?php
 $questions = array(
   array(
-      // Schlüssel, Identifikator der Frage
       "id" => "q1",
-      // Fragetyp
+      // Type of the Question
       "type"          => "range",
-      // Intervall für gesunde Antwort
+      // Intervall for the answers related to health
       "healthy-range" => array(70, 100),
       "healthy-points"=> 3
   ),
   array(
       "id" => "q2",
       "type"          => "radio",
-      "healthy-value" => "Yes", // Gesunde Antwort
+      "healthy-value" => "Yes", 
       "healthy-range" => array(1, 1), // Optional
       "healthy-points"=> 3
   ),
@@ -67,6 +66,6 @@ $questions = array(
   )
   );
 
-// $questions noch als globale Konstante "QUESTIONS".
+// $questions saved like global constant "QUESTIONS".
 define("QUESTIONS", $questions);
 ?>
