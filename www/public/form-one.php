@@ -126,6 +126,18 @@ if (session_status() === PHP_SESSION_NONE){
         </section>
       </fieldset>
 
+      <fieldset class="fieldset">
+          <legend>5- how do you evaluate your additional physical activity?</legend>
+          <section class="field">
+            <input type="range" name="q5" id="q5" min="0" max="100"  value="0">
+          </section>
+          <section class="field" id="field5">
+            <label for="q5">A little</label>
+            <label for="q5">Just right</label>
+            <label for="q5">Too much</label>
+          </section>
+        </fieldset>
+
       <section class="fieldset">
         <section class="field">
         <input class="btn" type="button" value="Back" onclick="closeForm()">

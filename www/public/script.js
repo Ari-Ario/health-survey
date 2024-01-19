@@ -77,6 +77,14 @@ class healthSurvey{
       } else {
         document.getElementById("formfirst").submit();
       }
+
+
+      let q5Input = document.getElementById("q5");
+    //   const minAllowedValue = 1;
+
+      if (q5Input.value < minAllowedValue) {
+        alert("A littel cannot be accept as an answer");
+      } 
     }
 
     validateSecondForm() {
@@ -96,18 +104,11 @@ class healthSurvey{
         q10Input === ""
       ) {
         alert("Error: Please fill in all the required fields");
-      }
-
-      let q5Input = document.getElementById("q5");
-      const minAllowedValue = 1;
-
-      if (q5Input.value < minAllowedValue) {
-        alert("A littel cannot be accept as an answer");
       } else {
-          document.getElementById('formsecond').submit()
-      }
+        document.getElementById('formsecond').submit()
     }
 
+    }
 
 }
 

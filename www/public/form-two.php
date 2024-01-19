@@ -23,7 +23,7 @@
     <section class="form-section-two">
       <form name="form2" id="formsecond" action="/components-form/submit-form-two.php" method="POST">
 
-        <fieldset class="fieldset">
+        <!-- <fieldset class="fieldset">
           <legend>5- how do you evaluate your additional physical activity?</legend>
           <section class="field">
             <input type="range" name="q5" id="q5" min="0" max="100"  value="0">
@@ -33,7 +33,7 @@
             <label for="q5">Just right</label>
             <label for="q5">Too much</label>
           </section>
-        </fieldset>
+        </fieldset> -->
 
         <fieldset>
           <legend>6- how many of your meals or snacks contain carbohydrates daily?</legend>

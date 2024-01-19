@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE){
 
 // Set session variables
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $_SESSION['q5'] =$_POST['q5'];
+    // $_SESSION['q5'] =$_POST['q5'];
     $_SESSION['q6'] =$_POST['q6'];
     $_SESSION['q7'] =$_POST['q7'];
     $_SESSION['q8'] =$_POST['q8'];

@@ -43,7 +43,7 @@ foreach (QUESTIONS as $i => $data) {
     $totalPoints = $totalPoints + $points;
     $questionNumber = substr($questionKey, 1);
 
-    $report .= "<p>Question $questionNumber : points = $points with your input(\$value=$value)</p>";
+    $report .= "<p>Question $questionNumber : points = $points according to your (input=$value)</p>";
 }
 
 function countSelectedCheckboxes($userPost) {
